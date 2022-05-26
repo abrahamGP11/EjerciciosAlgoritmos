@@ -62,17 +62,22 @@
 
 
 // Determinar si un numero es la suma de los otros 2
-let numero1=prompt("Indica el primer numero entre 1 y 100");
-let numero2=prompt("Indica el segundo numero entre 1 y 100");
-let numero3=prompt("Indica el tercer numero entre 1 y 100");
+// let numero1=prompt("Indica el primer numero entre 1 y 100");
+// let numero2=prompt("Indica el segundo numero entre 1 y 100");
+// let numero3=prompt("Indica el tercer numero entre 1 y 100");
+// 
+// if (numero3 - numero1 - numero2==0) {
+//     alert(numero3 +" es la suma de " + numero1 +" y "+ numero2)
+// } else if (numero2 - numero1 -numero3==0) {
+//     alert(numero2 +" es la suma de " + numero1 +" y "+ numero3)
+// } else if (numero1 - numero3 - numero2==0) {
+//     alert(numero1 +" es la suma de " + numero2 +" y "+ numero3)
+// }
 
-if (numero3 - numero1 - numero2==0) {
-    alert(numero3 +" es la suma de " + numero1 +" y "+ numero2)
-} else if (numero2 - numero1 -numero3==0) {
-    alert(numero2 +" es la suma de " + numero1 +" y "+ numero3)
-} else if (numero1 - numero3 - numero2==0) {
-    alert(numero1 +" es la suma de " + numero2 +" y "+ numero3)
+function writePI(){
+    console.log(Math.PI);
 }
+writePI();
 
 
 
