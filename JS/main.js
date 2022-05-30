@@ -74,10 +74,40 @@
 //     alert(numero1 +" es la suma de " + numero2 +" y "+ numero3)
 // }
 
-function writePI(){
-    console.log(Math.PI);
+// function writePI(){
+//     console.log(Math.PI);
+// }
+// writePI();
+
+
+//      Ejercicio 3
+//      Adivinar un número entre el 1 y el 100 en la menor cantidad de pasos
+function adivinar() {
+    let superior=100;
+    let inferior=0;
+    let noEncontrado=true;
+
+    while (noEncontrado) {
+        let mid=parseInt(inferior + ((superior-inferior)/2));
+        console.log(mid);
+        console.log((superior-inferior/2));
+
+        if (((superior-inferior)/2)<1) {
+            noEncontrado=false;
+            alert("Tu numero es el "+ (parseInt(mid)+1));
+            break;
+        } //if
+        let res=confirm("Es menor o igual a " + mid);
+        if(res){
+            superior=mid;
+        } else{
+            inferior=mid
+        }
+        console.log(inferior, superior);
+    }
 }
-writePI();
+adivinar();
+
 
 
 
